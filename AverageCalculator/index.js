@@ -53,7 +53,6 @@ const fetchWithTimeout = async (url, timeout = 500) => {
     return response.data?.numbers || [];
   } catch (error) {
     console.error(`Error fetching from ${url}:`, error.message);
-    console.log("Using mock data due to upstream server error");
     return [];
   }
 };
